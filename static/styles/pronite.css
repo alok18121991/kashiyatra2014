@@ -1,0 +1,166 @@
+.pronite{
+	margin-top:-10%;
+	z-index:2;
+	visibility:hidden;
+	padding-top:10px;
+	padding-left:15%;
+	}
+.pronite:target {
+	visibility:visible;
+	
+}
+
+.wrap {
+      overflow: hidden;
+      
+      margin:10px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 40%;
+      padding-bottom: 20%;
+     
+    }
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+    }
+    .boxInner img {
+      width: 100%;
+    }
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -50px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+    
+   
+   .pronite:target .fadeIn {
+	
+	margin:15px;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-ms-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
+	box-shadow: 0px 0px 5px #333;
+	
+	
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	-o-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+
+/*---------------------Duration------------------------- */
+.pronite:target .fadeIn-3s {
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-o-animation-duration:3s;
+	animation-duration:3s;
+}
+
+
+/*---------------------Delay------------------------- */
+.pronite:target .fadeIn-Delay-3s {
+	-webkit-animation-delay:1s;
+	-moz-animation-delay:1s;
+	-o-animation-delay:1s;
+	animation-delay:1s;
+}
+
+
+
+/*--------------------Key-Frames------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.boxInner:hover{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	transform:scale(1.1);
+	z-index:99;
+}
+.propicdiv{
+  margin-top:8%;
+  text-align: center;
+}
+
+.propic{
+  width:24%;
+  
+  margin-right:10px;
+  margin-top:10px;
+ 
+}
+.propic:hover{
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  transform:scale(1.5);
+}
+
+
+
+    @media only screen and (max-width : 480px) {
+      /* Smartphone*/
+     .pronite{
+     	padding-left:0;
+     }
+      .box {
+        width: 100%;
+        padding-bottom: 60%;
+        margin-top:10%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view*/
+     .pronite{
+     	padding-left:0;
+     }
+      .box {
+      	margin-top:5%;
+        width: 50%;
+        padding-bottom: 30%;
+       
+        
+      }
+      
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view:*/
+      .box {
+        width: 35%;
+        padding-bottom: 30%;
+        margin-left:5%;
+        
+      }
+    }
+   
+    
